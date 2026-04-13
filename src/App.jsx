@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
 import Navbar from './Components/navbar.jsx';
 import Hero from './Components/Hero.jsx';
 import Skills from './Components/Skills.jsx';
