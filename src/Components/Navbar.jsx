@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-const navlinks = [
+const navLinks = [
     {label : "About Me", href : "#about"},
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
