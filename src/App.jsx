@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Components/navbar.jsx';
+import Navbar from './Components/Navbar.jsx';
 import Hero from './Components/Hero.jsx';
 import Skills from './Components/Skills.jsx';
 import Education from './Components/Education.jsx';
