@@ -42,12 +42,20 @@ export default function Contact() {
   const handleChange = (e) =>
     setFormState((s) => ({ ...s, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    /* Wire up to Formspree, EmailJS, or any backend */
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    await fetch('https://formspree.io/f/xrejgvag', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formState),
+    });
     setSent(true);
     setFormState({ name: '', email: '', message: '' });
-  };
+  } catch (error) {
+    console.error('Failed to send message:', error);
+  }
+};
 
   return (
     <section id="contact" className="py-28 relative">
@@ -65,14 +73,15 @@ export default function Contact() {
         <SectionHeader
           label="// let's connect"
           title="Get in Touch"
-          subtitle="Whether you have an opportunity, a project idea, or just want to say hello — my inbox is open."
+          subtitle="I am currently building my skills as a Software Engineer, specially in areas like
+          Full-Stack Development and Project Management and I am open to internship opportunities and collaborations."
         />
 
         <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           {/* Social links */}
           <div className="flex flex-col gap-4">
             <p className="font-body text-muted text-sm leading-relaxed mb-2">
-              I'm currently open to internship opportunities and collaborations. Feel free to reach out through any of these channels.
+              Send your message thorugh this form or find me on my professional networks below.
             </p>
 
             {socialLinks.map((s) => (
