@@ -116,13 +116,15 @@ export default function Hero() {
               className="font-body text-muted"
               style={{
                 fontSize: '1rem',
-                lineHeight: '1.75',
+                lineHeight: '1.55',
                 marginBottom: '2.5rem',
-                maxWidth: '440px',
+                maxWidth: '540px',
               }}
             >
-              Passionate about building clean, performant software —
-              turning ideas into elegant, functional products one commit at a time.
+              I am a Software Engineering Undergraduate specializing in building user-centric 
+              full-stack applications. I am passionate about bridging the gap between technical 
+              development and strategic project management, with a focus on leveraging cloud 
+              infrastructure to scale high-impact solutions.
             </p>
 
             {/* View CV button */}
