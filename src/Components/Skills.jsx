@@ -15,7 +15,7 @@ const skillGroups = [
   },
   {
     title: 'Tools',
-    items: ['Git', 'GitHub', 'VS Code', 'Postman', 'ClickUp', 'Expo'],
+    items: ['Git', 'GitHub', 'VS Code', 'Antigravity', 'Postman', 'ClickUp', 'Expo'],
   },
   {
     title : 'Soft Skills',
