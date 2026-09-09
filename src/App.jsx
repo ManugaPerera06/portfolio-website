@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Components/Navbar.jsx';
 import Hero from './Components/Hero.jsx';
+import Experience from './Components/Experience.jsx';
 import Skills from './Components/Skills.jsx';
 import Education from './Components/Education.jsx';
 import Projects from './Components/Projects.jsx';
@@ -25,6 +26,10 @@ function App() {
 
         {/* Section separator */}
         <div className="w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+        <Experience/>
+
+        <div className="w-full h-px bg-linear-to-r from-transparent via-border to-transparent" />
 
         <Skills />
 
