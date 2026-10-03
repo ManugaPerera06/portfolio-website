@@ -176,6 +176,16 @@ export default function Contact() {
             )}
           </div>
         </div>
+
+        {/* Footer */}
+        <div className="mt-20 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+          <p className="font-mono text-xs text-muted">
+            © 2026 Manuga Perera. All rights reserved.
+          </p>
+          <p className="font-mono text-xs text-muted">
+            Built with React and Tailwind CSS
+          </p>
+        </div>
       </div>
     </section>
   );
