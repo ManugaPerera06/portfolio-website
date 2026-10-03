@@ -11,7 +11,7 @@ const skillGroups = [
   },
   {
     title: 'Back-End & Databases',
-    items: ['Flask', 'Firebase', 'MySQL'],
+    items: ['Flask', 'REST APIs', 'Firebase', 'MySQL'],
   },
   {
     title: 'Tools',
