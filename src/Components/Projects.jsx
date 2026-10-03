@@ -26,6 +26,14 @@ const projects = [
     github: 'https://github.com/ManugaPerera06/portfolio-website',
   },
   {
+    title: 'ApexPredict',
+    description: 'A Full-Stack Machine Learning web application designed to predict the finishing order of Formula 1 Grand Prix races.',
+    tags: ['React', 'Tailwind CSS', 'Flask', 'REST APIs','Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Joblib'],
+    gradient: 'from-red-600/20 to-red-600/15',
+    github: 'https://github.com/ManugaPerera06/apex-predict',
+    status: 'ongoing',
+  },
+  {
     title: 'Traffic Flow Manager',
     description: 'This system gets traffic data of two junctions from CSV files provided, analyze them and returns an output to get better decisions on traffic flow on each junction.',
     tags: ['Python'],
