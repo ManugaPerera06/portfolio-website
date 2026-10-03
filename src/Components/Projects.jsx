@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Portfolio Website',
     description: 'Developed to showcase skills, projects and education.',
-    tags: ['ReactJS', 'Tailwind CSS', 'JavaScript', 'Vite'],
+    tags: ['React', 'Tailwind CSS', 'JavaScript', 'Vite'],
     gradient: 'from-cyan-500/10 to-blue-500/10',
     github: 'https://github.com/ManugaPerera06/portfolio-website',
   },
