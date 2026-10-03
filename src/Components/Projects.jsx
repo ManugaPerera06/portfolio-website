@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Teera',
     description: 'An AI-powered mobile application for the Cinnamon farmers with the ability to predict the spreading location of the identified disease and give recommended treatment options for the identified disease.',
-    tags: ['React Native', 'TypeScript', 'Expo', 'Flask', 'Python', 'Tensorflow', 'Numpy', 'Keras'],
+    tags: ['React Native', 'TypeScript', 'Expo', 'Flask', 'Python', 'REST APIs', 'Tensorflow', 'Numpy', 'Keras'],
     gradient: 'from-green-500/20 to-green-500/10',
     github: 'https://github.com/Sajani-Prabhashika/SDGP',
     status: 'completed',
