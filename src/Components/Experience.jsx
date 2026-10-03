@@ -13,7 +13,7 @@ const experiences = [
     techStack: [
       { label: 'Languages', items: ['JavaScript', 'PHP'] },
       { label: 'Frameworks', items: ['React'] },
-      { label: 'Tools & Databases', items: ['MySQL', 'Git', 'GitHub', 'Google Antigravity'] },
+      { label: 'Tools & Databases', items: ['MySQL', 'Git', 'GitHub', 'Google Antigravity', 'ClickUp'] },
     ],
   },
 ];
