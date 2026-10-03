@@ -6,6 +6,7 @@ import Skills from './Components/Skills.jsx';
 import Education from './Components/Education.jsx';
 import Projects from './Components/Projects.jsx';
 import Contact from './Components/Contact.jsx';
+import BackToTop from './Components/BackToTop.jsx';
 
 function App() {
   return (
@@ -44,6 +45,8 @@ function App() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
         <Contact />
+
+        <BackToTop />
       </div>
     </div>
   );
