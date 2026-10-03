@@ -123,8 +123,7 @@ export default function Hero() {
             >
               I am a Software Engineering Undergraduate specializing in building user-centric 
               full-stack applications. I am passionate about bridging the gap between technical 
-              development and strategic project management, with a focus on leveraging cloud 
-              infrastructure to scale high-impact solutions.
+              development and strategic project management.
             </p>
 
             {/* View CV button */}
