@@ -8,6 +8,7 @@ const projects = [
     tags: ['React Native', 'TypeScript', 'Expo', 'Flask', 'Python', 'Tensorflow', 'Numpy', 'Keras'],
     gradient: 'from-green-500/20 to-green-500/10',
     github: 'https://github.com/Sajani-Prabhashika/SDGP',
+    status: 'completed',
   },
   {
     title: 'FixIT',
@@ -15,6 +16,7 @@ const projects = [
     tags: ['Flutter', 'Dart'],
     gradient: 'from-purple-500/25 to-cyan-500/10',
     github: 'https://github.com/SemikaVidusha/Fix-IT-Codesprint',
+    status: 'completed',
   },
   {
     title: 'Portfolio Website',
@@ -29,31 +31,58 @@ const projects = [
     tags: ['Python'],
     gradient: 'from-orange-500/20 to-amber-500/10',
     github: 'https://github.com/ManugaPerera06/Traffic_Flow_Management',
+    status: 'completed',
   },
 ];
 
+const statusStyles = {
+  completed: {
+    label: 'Completed',
+    badge: 'border-green-500/30 bg-green-500/10 text-green-400',
+    dot: 'bg-green-400',
+  },
+  ongoing: {
+    label: 'Ongoing',
+    badge: 'border-amber-500/30 bg-amber-500/10 text-amber-400',
+    dot: 'bg-amber-400 animate-pulse',
+  },
+};
+
 function ProjectCard({ project }) {
+  const status = statusStyles[project.status];
+
   return (
     <div
       className={`relative bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col ${
         project.featured ? 'md:col-span-2' : ''
       }`}
     >
-      {/* Gradient bg accent — MUST be directly here */}
+      {/* Gradient bg accent */}
       <div
         className={`absolute inset-0 bg-gradient-to-br ${project.gradient} pointer-events-none`}
       />
 
       <div className="relative z-10 p-6 flex flex-col h-full">
-        {/* Top row — title + GitHub button */}
+        {/* Top row — title + status on the left, GitHub button on the right */}
         <div className="flex items-start justify-between gap-3 mb-4">
-          <h3 className="font-display font-bold text-white text-lg leading-tight">
-            {project.title}
-          </h3>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-display font-bold text-white text-lg leading-tight">
+              {project.title}
+            </h3>
+
+            {status && (
+              <span
+                className={`inline-flex items-center gap-1.5 self-start font-mono text-xs px-2.5 py-1 rounded-full border ${status.badge}`}
+              >
+                <span className={`w-1.5 h-1.5 rounded-full ${status.dot}`} />
+                {status.label}
+              </span>
+            )}
+          </div>
 
           {project.github && (
-            
-              <a href={project.github}
+            <a
+              href={project.github}
               target="_blank"
               rel="noreferrer"
               aria-label={`View ${project.title} on GitHub`}
