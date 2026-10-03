@@ -74,7 +74,8 @@ export default function Contact() {
           label="// let's connect"
           title="Get in Touch"
           subtitle="I am currently building my skills as a Software Engineer, specially in areas like
-          Full-Stack Development and Machine Learning."
+          Full-Stack Development and Machine Learning. Later I will search and head toward on areas like 
+          DevOps or Cloud Computing."
         />
 
         <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
