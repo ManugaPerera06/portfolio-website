@@ -5,6 +5,7 @@ import Experience from './Components/Experience.jsx';
 import Skills from './Components/Skills.jsx';
 import Education from './Components/Education.jsx';
 import Projects from './Components/Projects.jsx';
+import Volunteering from './Components/Volunteering.jsx';
 import Contact from './Components/Contact.jsx';
 import BackToTop from './Components/BackToTop.jsx';
 
@@ -39,6 +40,8 @@ function App() {
         <Projects />
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+        <Volunteering/>
 
         <Education />
 
