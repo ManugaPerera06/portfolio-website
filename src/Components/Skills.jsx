@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 const skillGroups = [
   {
     title: 'Programming Languages',
-    items: ['Python', 'Java', 'JavaScript','TypeScript'],
+    items: ['Python', 'Java', 'JavaScript','TypeScript', 'Go', 'SQL', 'PHP'],
   },
   {
     title: 'Front-End Development',
