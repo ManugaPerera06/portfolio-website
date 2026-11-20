@@ -1,10 +1,12 @@
 import React from 'react';
 import { SectionHeader } from './Skills';
+import ssbLogo from '../assets/logos/ssb.png';
 
 const experiences = [
   {
     role: 'Software Engineer Intern',
     company: 'Sri Lanka Social Security Board',
+    logo: ssbLogo,
     period: 'August 2026 - Present',
     workMode: 'onsite', // 'onsite' | 'hybrid' | 'remote'
     description:
@@ -93,36 +95,48 @@ export default function Experience() {
                   <div className="bg-card border border-border rounded-2xl p-6 card-hover">
                     {/* Header */}
                     <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
-                      <div className="flex flex-col gap-2">
-                        <div>
-                          <h3 className="font-display font-bold text-white text-lg">
-                            {exp.role}
-                          </h3>
-                          <p className="font-body text-accent text-sm mt-0.5">
-                            {exp.company}
-                          </p>
-                        </div>
-
-                        {/* Work mode badge */}
-                        {mode && (
-                          <span
-                            className={`inline-flex items-center gap-1.5 self-start font-mono text-xs px-2.5 py-1 rounded-full border ${mode.badge}`}
-                          >
-                            <svg
-                              width="12"
-                              height="12"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            >
-                              {mode.icon}
-                            </svg>
-                            {mode.label}
-                          </span>
+                      {/* Logo + title + badge */}
+                      <div className="flex items-start gap-4">
+                        {exp.logo && (
+                          <div className="w-14 h-14 shrink-0 rounded-xl bg-white p-1.5 flex items-center justify-center">
+                            <img
+                              src={exp.logo}
+                              alt={`${exp.company} logo`}
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
                         )}
+
+                        <div className="flex flex-col gap-2">
+                          <div>
+                            <h3 className="font-display font-bold text-white text-lg">
+                              {exp.role}
+                            </h3>
+                            <p className="font-body text-accent text-sm mt-0.5">
+                              {exp.company}
+                            </p>
+                          </div>
+
+                          {mode && (
+                            <span
+                              className={`inline-flex items-center gap-1.5 self-start font-mono text-xs px-2.5 py-1 rounded-full border ${mode.badge}`}
+                            >
+                              <svg
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              >
+                                {mode.icon}
+                              </svg>
+                              {mode.label}
+                            </span>
+                          )}
+                        </div>
                       </div>
 
                       <span
