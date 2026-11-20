@@ -1,16 +1,21 @@
 import React from 'react';
 import { SectionHeader } from './Skills';
+import westminsterLogo from '../assets/logos/westminster.png';
+import iitLogo from '../assets/logos/iit.png';
+import nalandaLogo from '../assets/logos/nalanda.png';
 
 const education = [
   {
     degree: 'BEng (Hons) Software Engineering',
     institution: 'University of Westminster',
+    logo: westminsterLogo,
     period: '2024 - Present',
     current: true,
   },
   {
     degree: 'Foundation Certificate in Higher Education',
     institution: 'Informatics Institute of Technology',
+    logo: iitLogo,
     period: '2023 - 2024',
     description: 'Completed the Foundation with a Merit pass.',
     current: false,
@@ -18,6 +23,7 @@ const education = [
   {
     degree: 'G.C.E. Ordinary Level Examination 2022(2023)',
     institution: 'Nalanda College',
+    logo: nalandaLogo,
     period: '2012 - 2023',
     description: 'Completed O/Ls and got 7As and 2Bs',
     current: false,
@@ -60,10 +66,23 @@ export default function Education() {
                 {/* Card */}
                 <div className="bg-card border border-border rounded-2xl p-6 card-hover">
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
-                    <div>
-                      <h3 className="font-display font-bold text-white text-lg">{edu.degree}</h3>
-                      <p className="font-body text-accent text-sm mt-0.5">{edu.institution}</p>
+                    {/* Logo + title */}
+                    <div className="flex items-center gap-4">
+                      {edu.logo && (
+                        <div className="w-14 h-14 shrink-0 rounded-xl bg-white p-1.5 flex items-center justify-center">
+                          <img
+                            src={edu.logo}
+                            alt={`${edu.institution} logo`}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                      )}
+                      <div>
+                        <h3 className="font-display font-bold text-white text-lg">{edu.degree}</h3>
+                        <p className="font-body text-accent text-sm mt-0.5">{edu.institution}</p>
+                      </div>
                     </div>
+
                     <span
                       className={`font-mono text-xs px-3 py-1 rounded-full border ${
                         edu.current
@@ -75,7 +94,9 @@ export default function Education() {
                     </span>
                   </div>
 
-                  <p className="font-body text-muted text-sm leading-relaxed mb-4">{edu.description}</p>
+                  {edu.description && (
+                    <p className="font-body text-muted text-sm leading-relaxed">{edu.description}</p>
+                  )}
                 </div>
               </div>
             ))}
