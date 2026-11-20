@@ -2,7 +2,7 @@
 
 A personal developer portfolio built to showcase my skills, projects and experience.
 
-## 🔗 Live Demo
+## 🔗 Live Website
 https://manuga-perera-dev.vercel.app
 
 ## 🚀 Features
