@@ -5,7 +5,7 @@ import coderallyImg from '../assets/CodeRally 7.0.jpeg';
 const events = [
   {
     title: 'CodeRally 7.0',
-    organizer: 'IEEE CIS Student Branch Chapter of IIT',
+    organizer: 'IEEE Computer Society Student Branch Chapter of IIT',
     role: 'Logistics Volunteer',
     period: 'June 2026 - September 2026',
     description: 'Contributed to the operational execution of CodeRally 7.0, a premiere 24-hour national competitive programming hackathon bringing together coders from 35+ universities. Managed physical venue setup, inventory procurement, meal schedules, and continuous on-site logistics during the workshops and the final hackathon to ensure smooth operations for hundreds of participants, mentors, and organizers.',
